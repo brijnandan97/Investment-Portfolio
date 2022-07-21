@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Tracker</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        font-family: arial;
+    }
+    body{
+        overflow-y: hidden;
+    }
+    header{
+        height: 5rem;
+        text-align: center;
+        background-color: #34626c;
+        color: white;
+    }
+    header h1{
+        padding-top: 1rem;
+    }
+    main{
+        display: flex;
+        height: 100vh;
+        background-color: #839897;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    main div{
+        margin-bottom: 20rem;
+    }
+    .input-container{
+        background-color: #cfd3ce;
+        padding: 2rem;
+        border-radius: 10%;
+    }
+    label{
+        font-weight: 600;
+    }
+    .graph-container{
+        background-color: #cfd3ce;
+        margin-top: 5%;
+       
+    }
+</style>
+<body>
+    <header>
+        <h1>Investment Tracker</h1>
+    </header>
+    <main>
+        <div class="input-container">
+            <form>
+                <div class="form-group">
+                    <span class="formGroupExampleInput">Item name</span>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter item name">
+                </div>
+                <div class="form-group">
+                    <span class="formGroupExampleInput2">Cost</span>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Cost ">
+                </div>
+            </form>
+        </div>
+        <div class="graph-container">Graph will be here</div>
+    </main>
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
